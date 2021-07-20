@@ -1,11 +1,15 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Login from "../components/UserManagemnet/Login";
-import camp from "../public/images/homepage.png";
-import Image from 'next/image'
+import camping from "../public/images/camping_homepage.jpg";
+import Image from "next/image";
 
 function Home() {
-  return <Image src={camp} alt="" height={280}/>;
+  return (
+    <Image
+      style={{ objectFit: "fill" }}
+      src={camping}
+      alt="Camping Beside The Fire"
+      layout="fill"
+    />
+  );
 }
 export async function getServerSideProps(context) {
   return {

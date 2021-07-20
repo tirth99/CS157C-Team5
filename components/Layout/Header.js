@@ -3,12 +3,21 @@ import { UserOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import { Fragment } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../../actions/securityActions";
+import { logout } from "../../util/actions/securityActions";
 import { useState, useEffect } from "react";
 import jwt_decode from "jwt-decode";
-import AddNewCamp from "../modals/AddNewCamp";
+import dynamic from "next/dynamic";
+import Router from "next/router";
 
 const HeaderComponent = () => {
+  const AddNewCamp = dynamic(() => import("../modals/AddNewCamp"), {
+    ssr: false,
+  });
+
+  const onClick = () => {
+    Router.push("/");
+  };
+
   const { Header } = Layout;
   const dispatch = useDispatch();
   const user = useSelector((state) => state.security.user);
@@ -21,49 +30,53 @@ const HeaderComponent = () => {
   const [headerMenu, setHeaderMenu] = useState("publicMenu");
   const publicMenu = (
     <Menu mode="horizontal" theme="dark" className="p-menu">
-      <Menu.Item key="/signup-as-user">
-        <Link href="/signup-as-user">
-          Sign Up
-        </Link>
-      </Menu.Item>
-      <Menu.Item key="/login">
-        <Link href="/login">
-          Login
-        </Link>
-      </Menu.Item>
+      <Menu mode="horizontal" theme="dark" className="p-menu">
+        <Menu.Item key="/signup-as-user">
+          <Link href="/signup-as-user">
+            <div>
+              <span>Sign Up </span> <i className="fas fa-user-plus"></i>
+            </div>
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="/login">
+          <Link href="/login">
+            <div>
+              <span>Login </span>
+              <i className="fas fa-sign-in-alt"></i>
+            </div>
+          </Link>
+        </Menu.Item>
+      </Menu>
     </Menu>
   );
   const addNewCamp = () => {
-    setIsAddNewCamp(true)
-  }
+    setIsAddNewCamp(true);
+  };
   const onCancle = () => {
-    setIsAddNewCamp(false)
-  }
+    setIsAddNewCamp(false);
+  };
 
   const userMenu = (
     <Fragment>
       <Menu mode="horizontal" theme="dark" className="p-menu">
-        <Menu mode="horizontal" theme="dark" className="p-menu">
-          <Menu.Item key="/camps">
-            <Link href="/camps">
-            Camps
-            </Link>
-          </Menu.Item>
-          <Menu.Item key={currentUser.username}>
-            <Link href="/profile">
-            <div id = "profile" className = "profile__link">
-            <UserOutlined id = "profile-icon"/>
+        <Menu.Item key="/available-campsites">
+          <Link href="/available-campsites">Available Camps</Link>
+        </Menu.Item>
+        <Menu.Item key="/booked-camps">
+          <Link href="/bookedCamps">Booked Camps</Link>
+        </Menu.Item>
+        <Menu.Item key={currentUser.username}>
+          <Link href="/profile">
+            <div id="profile" className="profile__link">
+              <UserOutlined id="profile-icon" />
               {currentUser.username}
             </div>
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="handleUserLogout" onClick={handleLogout}>
-            {" "}
-            <Link href="/login" >
-              Logout
-            </Link>
-          </Menu.Item>
-        </Menu>
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="handleUserLogout" onClick={handleLogout}>
+          {" "}
+          <Link href="/login">Logout</Link>
+        </Menu.Item>
       </Menu>
     </Fragment>
   );
@@ -72,34 +85,35 @@ const HeaderComponent = () => {
     <Fragment>
       <Menu mode="horizontal" theme="dark" className="p-menu">
         <Menu mode="horizontal" theme="dark" className="p-menu">
-          <Menu.Item key="/addNewCamp" onClick = {addNewCamp}>
-          Add New Camp
+          <Menu.Item key="/addNewCamp" onClick={addNewCamp}>
+            Add New Camp
           </Menu.Item>
-          <Menu.Item key="/camps">
-            <Link href="/camps">
-              Camps
-            </Link>
+          <Menu.Item key="/available-campsites">
+            <Link href="/available-campsites">Available Camps</Link>
+          </Menu.Item>
+          <Menu.Item key="/booked-camps">
+            <Link href="/bookedCamps">Booked Camps</Link>
           </Menu.Item>
           <Menu.Item key={currentUser.username}>
             <Link href="/profile">
-            <div id = "profile" className = "profile__link">
-            <UserOutlined id = "profile-icon"/>
-              {currentUser.username}
-            </div>
+              <div id="profile" className="profile__link">
+                <UserOutlined id="profile-icon" />
+                {currentUser.username}
+              </div>
             </Link>
           </Menu.Item>
           <Menu.Item key="handleParkManagerLogout" onClick={handleLogout}>
             {" "}
-            <Link href="/login" >
-              Logout
-            </Link>
+            <Link href="/login">Logout</Link>
           </Menu.Item>
         </Menu>
       </Menu>
     </Fragment>
   );
+
   useEffect(() => {
     const jwt = localStorage.getItem("jwtToken");
+
     if (jwt) {
       const decode = jwt_decode(jwt);
       setCurrentUser(decode);
@@ -117,28 +131,31 @@ const HeaderComponent = () => {
     } else {
       setHeaderMenu("publicMenu");
     }
-  }, [user]);
+  }, [user, security.validToken]);
   const renderMenuBasedOnRole = () => {
-        if (headerMenu === 'userMenu') {
-            return userMenu;
-        }
-        if (headerMenu === 'park-manager') {
-            return parkManagerMenu;
-        }
-        else {
-            return publicMenu;
-        }
-  }
+    if (headerMenu === "userMenu") {
+      return userMenu;
+    }
+    if (headerMenu === "park-manager") {
+      return parkManagerMenu;
+    } else {
+      return publicMenu;
+    }
+  };
 
   return (
     <div>
-      <Header className = "header">
-      <Typography level={5} className="htitle">
-        California State Park <i className="fas fa-handshake"></i>
-      </Typography>
-      {renderMenuBasedOnRole()}
-    </Header>
-    <AddNewCamp isAddNewCamp = {isAddNewCamp} addNewCamp = {addNewCamp} onCancle = {onCancle}/>
+      <Header className="header">
+        <Typography level={5} className="htitle" onClick={onClick}>
+          Camping Site <i className="fas fa-hiking"></i>
+        </Typography>
+        {renderMenuBasedOnRole()}
+      </Header>
+      <AddNewCamp
+        isAddNewCamp={isAddNewCamp}
+        addNewCamp={addNewCamp}
+        onCancle={onCancle}
+      />
     </div>
   );
 };

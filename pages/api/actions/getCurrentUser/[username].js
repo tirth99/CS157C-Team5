@@ -2,7 +2,6 @@ import all from "../../../../middlewares/all";
 import nc from "next-connect";
 import { nosql } from "../../../../db/config/dbConnection";
 
-// Bring in the User Registration function
 const { getCurrentUser } = require("../../../../util/actions/getCurrentUser");
 
 const handler = nc()

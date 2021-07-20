@@ -1,8 +1,7 @@
 import { Form, Input, Button, DatePicker } from "antd";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useRouter } from "next/router";
-import { createUserAccount } from "../../actions/securityActions";
+import { createUserAccount } from "../../util/actions/securityActions";
 import Router from "next/router";
 
 const UserSignUp = (props) => {
@@ -10,14 +9,13 @@ const UserSignUp = (props) => {
   const dispatch = useDispatch();
   const security = useSelector((state) => state.security);
   const error = useSelector((state) => state.error);
-  console.log(security);
   useEffect(() => {
     if (security.validToken) {
       Router.push("/");
     }
     const jwt = localStorage.getItem("jwtToken");
     if (jwt) {
-      Router.push('/');
+      Router.push("/");
     }
   }, [security.validToken]);
 
@@ -37,7 +35,9 @@ const UserSignUp = (props) => {
       wrapperCol={{ span: 8 }}
       labelCol={{ span: 8 }}
     >
-    <p style =  {{textAlign: "center", color : "red"}}>{error.errors.signUpMessage}</p>
+      <p style={{ textAlign: "center", color: "red" }}>
+        {error.errors.signUpMessage}
+      </p>
       <Form.Item
         name="firstname"
         label="firstname"
@@ -145,7 +145,8 @@ const UserSignUp = (props) => {
       </Form.Item>
       <Form.Item wrapperCol={{ offset: 8 }}>
         <Button htmlType="submit" type="primary">
-          Register
+          <i className="fas fa-user-plus"></i>
+          <span>Register</span>
         </Button>
       </Form.Item>
     </Form>

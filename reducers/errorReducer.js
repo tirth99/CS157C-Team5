@@ -1,22 +1,22 @@
-import types from '../util/ActionTypes'
+import types from "../util/ActionTypes";
 
-const { GET_ERRORS } = types
+const { GET_ERRORS } = types;
 
 const initialState = {
-    errors: {}
-}
+  errors: {},
+};
 
 const errorReducer = (state = initialState, action) => {
-    switch (action.type) {
-        case GET_ERRORS:
-            return {
-                ...state,
-                errors: action.payload
-            }
+  switch (action.type) {
+    case GET_ERRORS:
+      return {
+        ...state,
+        errors: action.payload,
+      };
 
-        default:
-            return state;
-    }
-}
+    default:
+      return state;
+  }
+};
 
 export default errorReducer;

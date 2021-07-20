@@ -10,6 +10,7 @@ const { SECRET } = require("../../config");
  */
 const userRegister = async (userDets, role, res) => {
   try {
+    console.log(userDets);
     // Validate the username
     let usernameNotTaken = await validateUsername(userDets.username);
     if (!usernameNotTaken) {
@@ -44,20 +45,21 @@ const userRegister = async (userDets, role, res) => {
       const password = await bcrypt.hash(userDets.password, 12);
       // create a new user
       const newUser = new User({
-        firstname : userDets.firstname,
-        lastname : userDets.lastname,
-        email : userDets.email,
-        username : userDets.username,
+        firstname: userDets.firstname,
+        lastname: userDets.lastname,
+        email: userDets.email,
+        username: userDets.username,
         password,
-        birthday : dob, 
+        birthday: dob,
         role,
       });
 
       await newUser.save();
       return res.status(201).json({
-        signUpMessage: "Hurry! now you are successfully registred. Please nor login.",
+        signUpMessage:
+          "Hurry! now you are successfully registred. Please nor login.",
         success: true,
-      });   
+      });
     } else {
       const newUser = new User({
         ...userDets,
@@ -69,11 +71,6 @@ const userRegister = async (userDets, role, res) => {
   } catch (err) {
     const errors = validateUser(err);
     res.status(400).json(errors);
-    // Implement logger function (winston)
-    // return res.status(500).json({
-    //   message: "Unable to create your account.",
-    //   success: false
-    // });
   }
 };
 
@@ -114,12 +111,12 @@ const userLogin = async (userCreds, res) => {
     );
 
     let result = {
-      firstname : user.firstname,
-      lastname : user.lastname,
+      firstname: user.firstname,
+      lastname: user.lastname,
       username: user.username,
       role: user.role,
       email: user.email,
-      birthday : user.birthday,
+      birthday: user.birthday,
       token: `Bearer ${token}`,
       expiresIn: 168,
     };
@@ -154,11 +151,11 @@ const userAuth = passport.authenticate("jwt", { session: false });
 /**
  * @DESC Check Role Middleware
  */
-const checkRole = (roles) => (req, res, next) =>
+const checkRole = (roles) => (req, res, next) => {
   !roles.includes(req.user.role)
     ? res.status(401).json("Unauthorized")
     : next();
-
+};
 const validateEmail = async (email) => {
   let user = await User.findOne({ email });
   return user ? false : true;

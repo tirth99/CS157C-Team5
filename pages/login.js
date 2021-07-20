@@ -1,5 +1,4 @@
 import React from 'react'
-import Login from '../components/UserManagemnet/Login'
 import dynamic from 'next/dynamic'
 
 const DynamicComponentWithNoSSR = dynamic(

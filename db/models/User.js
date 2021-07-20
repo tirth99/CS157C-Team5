@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose");
 var mongoose = require("mongoose");
-var { isEmail, isLength } = require("validator");
+var { isEmail } = require("validator");
 const bcrypt = require("bcryptjs");
 
 const UserSchema = new Schema(
@@ -8,12 +8,10 @@ const UserSchema = new Schema(
     firstname: {
       type: String,
       required: [true, "Why no first name?"],
-      unique: true,
     },
     lastname: {
       type: String,
       required: [true, "Why no last name?"],
-      unique: true,
     },
     email: {
       type: String,
@@ -44,10 +42,16 @@ const UserSchema = new Schema(
       minlength: [6, "at least 6 characters"],
     },
     birthday: { type: Date },
-    posts: [
+    camps: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Post",
+        ref: "Camp",
+      },
+    ],
+    reservations: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Reservation",
       },
     ],
   },
@@ -62,7 +66,7 @@ const validateUsername = async (username) => {
 };
 
 async function createParkManagerAccount() {
-  let usernameNotTaken = await validateUsername('Manager');
+  let usernameNotTaken = await validateUsername("Manager");
   if (!usernameNotTaken) {
     return;
   }

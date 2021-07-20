@@ -1,16 +1,13 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, Input, Button, DatePicker } from "antd";
-import axios from "axios";
-import { useRouter } from "next/router";
 import moment from "moment";
-import { updateCurrentUser } from "../../actions/securityActions";
-import { useDispatch, useSelector } from "react-redux";
+import { updateCurrentUser } from "../../util/actions/securityActions";
+import { useDispatch } from "react-redux";
 
 const Profile = (props) => {
   const dispatch = useDispatch();
   const dateFormat = "YYYY/MM/DD";
   const [form] = Form.useForm();
-  const router = useRouter();
   const [user, setUser] = useState({
     username: props.user.username,
     firstname: props.user.firstname,
@@ -102,7 +99,7 @@ const Profile = (props) => {
 
           <Form.Item wrapperCol={{ offset: 8 }}>
             <Button htmlType="submit" type="primary">
-              Update
+              <i className="fas fa-user-edit"></i> Update
             </Button>
           </Form.Item>
         </Form>
