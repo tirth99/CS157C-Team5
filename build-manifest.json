@@ -36,10 +36,16 @@
       "static/chunks/pages/available-campsites-274e1ecd152e45713653.js"
     ],
     "/bookedCamps": [
-      
+      "static/chunks/webpack-da737799aa2aa803aa66.js",
+      "static/chunks/framework-c93ed74a065331c4bd75.js",
+      "static/chunks/main-b8a6706a4a585b4fdd51.js",
+      "static/chunks/pages/bookedCamps-bb1aa1ceee46b7cfe09a.js"
     ],
     "/camps/[id]": [
-      
+      "static/chunks/webpack-da737799aa2aa803aa66.js",
+      "static/chunks/framework-c93ed74a065331c4bd75.js",
+      "static/chunks/main-b8a6706a4a585b4fdd51.js",
+      "static/chunks/pages/camps/[id]-a4e768ab037883dd8f9c.js"
     ],
     "/login": [
       "static/chunks/webpack-da737799aa2aa803aa66.js",
@@ -54,7 +60,13 @@
       "static/chunks/pages/profile-1b55d12aeba7cd3eb744.js"
     ],
     "/signup-as-user": [
-      
+      "static/chunks/webpack-da737799aa2aa803aa66.js",
+      "static/chunks/framework-c93ed74a065331c4bd75.js",
+      "static/chunks/main-b8a6706a4a585b4fdd51.js",
+      "static/chunks/75fc9c18-5c1929f66343f0a636cd.js",
+      "static/chunks/474-f70522c1e75e592b0c31.js",
+      "static/chunks/168-f827b9199b63e28d0a76.js",
+      "static/chunks/pages/signup-as-user-137aa687da6138236b85.js"
     ]
   },
   "ampFirstPages": []
