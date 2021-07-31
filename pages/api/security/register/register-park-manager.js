@@ -9,14 +9,12 @@ const {
   checkRole,
   userRegister,
   serializeUser
-} = require('../../../../util/security/Auth');
+} = require("../../../../util/security/Auth");
 
 const handler = nc()
    .use(all)
   .post(async (req, res) => {
-    await userRegister(req.body, "user", res);
+    await userRegister(req.body, "park-manager", res);
   });
 
 export default handler;
-
-
