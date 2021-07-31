@@ -36,6 +36,7 @@ a {
   color: white !important;
   float: left;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .htitle > i {
@@ -208,6 +209,11 @@ img {
   flex-direction: row;
   background: white;
   padding: 0 0 0 1rem;
+}
+.user__list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .inner__ticket__form {
   box-shadow: -1px -1px 5px 5px rgb(219, 216, 216);
