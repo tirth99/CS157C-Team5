@@ -8,7 +8,7 @@ const ReservationSchema = new Schema(
     unitType: {
       type: String,
       required: [true, "Why no Unit Type?"],
-      enum: ["Truck Camper", "Van", "Class A Motor Home", "Class C Motor Home"],
+      enum: ["Truck Camper", "Mh Class A", "Mh Class B", "Mh Class C"],
     },
     numOfAdults: {
       type: Number,

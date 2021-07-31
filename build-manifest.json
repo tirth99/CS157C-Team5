@@ -1,0 +1,73 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-a54b4f32bdc1ef890ddd.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/X1FcjN4VofJnklZQQJg4Z/_buildManifest.js",
+    "static/X1FcjN4VofJnklZQQJg4Z/_ssgManifest.js"
+  ],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-da737799aa2aa803aa66.js",
+      "static/chunks/framework-c93ed74a065331c4bd75.js",
+      "static/chunks/main-b8a6706a4a585b4fdd51.js",
+      "static/chunks/675-7ea96d74162f87d64e8b.js",
+      "static/chunks/pages/index-26e635359a97196cad6c.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-da737799aa2aa803aa66.js",
+      "static/chunks/framework-c93ed74a065331c4bd75.js",
+      "static/chunks/main-b8a6706a4a585b4fdd51.js",
+      "static/css/13f4ac80abe05a6fcdb3.css",
+      "static/chunks/pages/_app-6e627f2caed742b4f2f4.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-da737799aa2aa803aa66.js",
+      "static/chunks/framework-c93ed74a065331c4bd75.js",
+      "static/chunks/main-b8a6706a4a585b4fdd51.js",
+      "static/chunks/pages/_error-80402f6d6dae03a985bc.js"
+    ],
+    "/available-campsites": [
+      "static/chunks/webpack-da737799aa2aa803aa66.js",
+      "static/chunks/framework-c93ed74a065331c4bd75.js",
+      "static/chunks/main-b8a6706a4a585b4fdd51.js",
+      "static/chunks/pages/available-campsites-274e1ecd152e45713653.js"
+    ],
+    "/bookedCamps": [
+      "static/chunks/webpack-da737799aa2aa803aa66.js",
+      "static/chunks/framework-c93ed74a065331c4bd75.js",
+      "static/chunks/main-b8a6706a4a585b4fdd51.js",
+      "static/chunks/pages/bookedCamps-bb1aa1ceee46b7cfe09a.js"
+    ],
+    "/camps/[id]": [
+      "static/chunks/webpack-da737799aa2aa803aa66.js",
+      "static/chunks/framework-c93ed74a065331c4bd75.js",
+      "static/chunks/main-b8a6706a4a585b4fdd51.js",
+      "static/chunks/pages/camps/[id]-a4e768ab037883dd8f9c.js"
+    ],
+    "/login": [
+      "static/chunks/webpack-da737799aa2aa803aa66.js",
+      "static/chunks/framework-c93ed74a065331c4bd75.js",
+      "static/chunks/main-b8a6706a4a585b4fdd51.js",
+      "static/chunks/pages/login-aba452cf803741cf8f81.js"
+    ],
+    "/profile": [
+      "static/chunks/webpack-da737799aa2aa803aa66.js",
+      "static/chunks/framework-c93ed74a065331c4bd75.js",
+      "static/chunks/main-b8a6706a4a585b4fdd51.js",
+      "static/chunks/pages/profile-1b55d12aeba7cd3eb744.js"
+    ],
+    "/signup-as-user": [
+      "static/chunks/webpack-da737799aa2aa803aa66.js",
+      "static/chunks/framework-c93ed74a065331c4bd75.js",
+      "static/chunks/main-b8a6706a4a585b4fdd51.js",
+      "static/chunks/75fc9c18-5c1929f66343f0a636cd.js",
+      "static/chunks/474-f70522c1e75e592b0c31.js",
+      "static/chunks/168-f827b9199b63e28d0a76.js",
+      "static/chunks/pages/signup-as-user-137aa687da6138236b85.js"
+    ]
+  },
+  "ampFirstPages": []
+}

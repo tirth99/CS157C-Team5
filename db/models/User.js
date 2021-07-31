@@ -41,7 +41,7 @@ const UserSchema = new Schema(
       required: [true, "Why no password?"],
       minlength: [6, "at least 6 characters"],
     },
-    birthday: { type: Date, required: [true, "Why no birthday?"], },
+    birthday: { type: Date },
     camps: [
       {
         type: mongoose.Schema.Types.ObjectId,
