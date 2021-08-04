@@ -28,7 +28,14 @@ const userRegister = async (userDets, role, res) => {
         success: false,
       });
     }
+<<<<<<< HEAD
     
+=======
+
+    // if (userDets.password.length >= 6) {
+
+    // }
+>>>>>>> 3109d7ab31906eab386540498aa1dc62b304bae1
     if (userDets.password !== userDets.confirm) {
       return res.status(400).json({
         signUpMessage: `Confirm password does not match`,
@@ -85,7 +92,18 @@ const userLogin = async (userCreds, res) => {
       success: false,
     });
   }
+<<<<<<< HEAD
   
+=======
+  // We will check the role
+  // if (user.role !== role) {
+  //   return res.status(403).json({
+  //     message: "Please make sure you are logging in from the right portal.",
+  //     success: false
+  //   });
+  // }
+  // That means user is existing and trying to signin fro the right portal
+>>>>>>> 3109d7ab31906eab386540498aa1dc62b304bae1
   // Now check for the password
   let isMatch = await bcrypt.compare(password, user.password);
   if (isMatch) {
@@ -109,7 +127,15 @@ const userLogin = async (userCreds, res) => {
       birthday: user.birthday,
       token: `Bearer ${token}`,
       expiresIn: 168,
+<<<<<<< HEAD
     };    
+=======
+    };
+
+    //  const cookies = new Cookies();
+    // cookies.set("jwt", "", { path: "/" });
+    // console.log(cookies.get("myCat")); // Pacman
+>>>>>>> 3109d7ab31906eab386540498aa1dc62b304bae1
 
     return res.status(200).json({
       ...result,
@@ -164,4 +190,8 @@ module.exports = {
   userLogin,
   userRegister,
   serializeUser,
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 3109d7ab31906eab386540498aa1dc62b304bae1
