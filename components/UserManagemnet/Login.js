@@ -65,7 +65,7 @@ const Login = (props) => {
         </div>
         <Form.Item
           name="username"
-          label="username"
+          label="Username"
           rules={[
             {
               required: true,
@@ -77,7 +77,7 @@ const Login = (props) => {
         </Form.Item>
         <Form.Item
           name="password"
-          label="password"
+          label="Password"
           rules={[
             {
               required: true,

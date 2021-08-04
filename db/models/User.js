@@ -41,7 +41,7 @@ const UserSchema = new Schema(
       required: [true, "Why no password?"],
       minlength: [6, "at least 6 characters"],
     },
-    birthday: { type: Date },
+    birthday: { type: Date, required: [true, "Why no birthday?"], },
     camps: [
       {
         type: mongoose.Schema.Types.ObjectId,
@@ -76,8 +76,8 @@ async function createParkManagerAccount() {
   const password = await bcrypt.hash("manager", 12);
   // create park manager account
   const newParkManager = new User({
-    firstname: "Truc",
-    lastname: "Nguyen",
+    firstname: "Admin",
+    lastname: "Admin",
     email: "manager@gmail.com",
     username: "Manager",
     password,

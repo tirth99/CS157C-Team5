@@ -81,12 +81,23 @@ const ReserveModal = (props) => {
       calculateTotalPriceByDays(
         reserveObject.startDate,
         reserveObject.endDate
-      ) +
-      calculateTotalPriceByUnitType(reserveObject.unitType) +
-      calculateTotalPriceByAdults(reserveObject.numOfAdults) +
-      calculateTotalPriceByChildren(reserveObject.numOfChildren);
+      )
     return totalPrice;
   };
+
+  // const calculateTotalPrice = () => {
+  //   var totalPrice =
+  //     calculateTotalPriceByDays(
+  //       reserveObject.startDate,
+  //       reserveObject.endDate
+  //     ) +
+  //     calculateTotalPriceByUnitType(reserveObject.unitType) +
+  //     calculateTotalPriceByAdults(reserveObject.numOfAdults) +
+  //     calculateTotalPriceByChildren(reserveObject.numOfChildren);
+  //   return totalPrice;
+  // };
+
+
   let stayRange = calculateDifferenceBetweenTwoDates(
     reserveObject.startDate,
     reserveObject.endDate
@@ -109,30 +120,22 @@ const ReserveModal = (props) => {
           <ul>
             <li>
               <span>
-                Stay Range : {stayRange} (days) *{reserveObject.costADay} ={" "}
-                {calculateTotalPriceByDays(
-                  reserveObject.startDate,
-                  reserveObject.endDate
-                )}
-                $
+                Stay Range : {stayRange} days
               </span>
             </li>
             <li>
               <span>
-                Unit Type : ({reserveObject.unitType}) ={" "}
-                {calculateTotalPriceByUnitType(reserveObject.unitType)}$
+                Unit Type : {reserveObject.unitType}
               </span>
             </li>
             <li>
               <span>
-                Adults : {reserveObject.numOfAdults}*100 ={" "}
-                {calculateTotalPriceByAdults(reserveObject.numOfAdults)}$
+                Adults : {reserveObject.numOfAdults}
               </span>
             </li>
             <li>
               <span>
-                Children : {reserveObject.numOfChildren}*50 ={" "}
-                {calculateTotalPriceByChildren(reserveObject.numOfChildren)}$
+                Children : {reserveObject.numOfChildren}
               </span>
             </li>
           </ul>

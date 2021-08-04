@@ -63,7 +63,7 @@ const HeaderComponent = () => {
           <Link href="/available-campsites">Available Camps</Link>
         </Menu.Item>
         <Menu.Item key="/booked-camps">
-          <Link href="/bookedCamps">History</Link>
+          <Link href="/bookedCamps">Reservations</Link>
         </Menu.Item>
         <Menu.Item key={currentUser.username}>
           <Link href="/profile">
@@ -95,7 +95,7 @@ const HeaderComponent = () => {
             <Link href="/available-campsites">Available Camps</Link>
           </Menu.Item>
           <Menu.Item key="/booked-camps">
-            <Link href="/bookedCamps">History</Link>
+            <Link href="/bookedCamps">Reservations</Link>
           </Menu.Item>
           <Menu.Item key={currentUser.username}>
             <Link href="/profile">

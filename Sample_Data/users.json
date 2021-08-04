@@ -1,0 +1,514 @@
+[{
+  "_id": {
+    "$oid": "60ffb162aa778d6e2031d072"
+  },
+  "role": "park-manager",
+  "camps": [
+    {
+      "$oid": "60ffb20baa778d6e2031d08c"
+    },
+    {
+      "$oid": "60ffb6b1cde01a1c54fe2c5d"
+    },
+    {
+      "$oid": "60ffb6ffcde01a1c54fe2c68"
+    },
+    {
+      "$oid": "60ffb719cde01a1c54fe2c6f"
+    },
+    {
+      "$oid": "60ffb8f3155397529c33fd49"
+    },
+    {
+      "$oid": "60ffb92b155397529c33fd50"
+    },
+    {
+      "$oid": "60ffb9d3155397529c33fd75"
+    },
+    {
+      "$oid": "60ffba2d155397529c33fd7c"
+    },
+    {
+      "$oid": "60ffba44155397529c33fd83"
+    },
+    {
+      "$oid": "60ffba91155397529c33fd97"
+    },
+    {
+      "$oid": "60ffbaaf155397529c33fd9e"
+    },
+    {
+      "$oid": "60ffbae0155397529c33fdb2"
+    },
+    {
+      "$oid": "60ffbb38155397529c33fdd3"
+    },
+    {
+      "$oid": "60ffbbba155397529c33fdda"
+    },
+    {
+      "$oid": "60ffbbdd155397529c33fde1"
+    },
+    {
+      "$oid": "60ffbbf3155397529c33fde8"
+    }
+  ],
+  "reservations": [],
+  "firstname": "Linh",
+  "lastname": "Huynh",
+  "email": "manager@gmail.com",
+  "username": "Manager",
+  "password": "$2a$12$hoFu4zLUK4Xio2gsJaE2h.vD2.LzGRGvXp31eNxlHVDsVx58TncsS",
+  "birthday": {
+    "$date": "2001-05-27T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T07:10:26.635Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T07:55:31.935Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffb231aa778d6e2031d094"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [
+    {
+      "$oid": "60ffb59dcde01a1c54fe2c36"
+    }
+  ],
+  "firstname": "Linh",
+  "lastname": "HUYNH",
+  "email": "linh.huynh@sjsu.edu",
+  "username": "linhhuynh",
+  "password": "$2a$12$1EDLv.CDShzcVfQlC.VjdubpZq4wdsRrczlmOArWXk6tMqcPx84.2",
+  "birthday": {
+    "$date": "2021-07-22T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T07:13:53.951Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T07:28:29.197Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffbcc2b4cb7157542b14b0"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [
+    {
+      "$oid": "60ffbe5b5b01997334a8b877"
+    },
+    {
+      "$oid": "60ffbea55b01997334a8b899"
+    },
+    {
+      "$oid": "60ffc2c75b01997334a8b94e"
+    },
+    {
+      "$oid": "60ffc2f05b01997334a8b95e"
+    },
+    {
+      "$oid": "60ffc3165b01997334a8b970"
+    },
+    {
+      "$oid": "60ffc3315b01997334a8b989"
+    },
+    {
+      "$oid": "60ffc3635b01997334a8b9a3"
+    },
+    {
+      "$oid": "60ffc3a012d4495d486078d0"
+    },
+    {
+      "$oid": "60ffc3c512d4495d486078e9"
+    },
+    {
+      "$oid": "60ffc3e912d4495d486078ff"
+    }
+  ],
+  "firstname": "Amy",
+  "lastname": "Le",
+  "email": "amyle@sjsu.edu",
+  "username": "amyle1",
+  "password": "$2a$12$DcP2PQfYgueZBXnNjEsojO/esh83DTfHK6XhjKjoTZeORnbwCpE5S",
+  "birthday": {
+    "$date": "2021-07-14T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T07:58:58.819Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:29:29.074Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc0f15b01997334a8b8fb"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [],
+  "firstname": "David",
+  "lastname": "Ho",
+  "email": "davidho@sjsu.edu",
+  "username": "davidho",
+  "password": "$2a$12$RAa09NADFGKZ0vf7kWhMpeFJwdV797wu8tkKr7DZy3hGCcII2naG.",
+  "birthday": {
+    "$date": "2021-07-01T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:16:49.148Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:16:49.148Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc11d5b01997334a8b8ff"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [],
+  "firstname": "Alex",
+  "lastname": "Tran",
+  "email": "alextran@sjsu.edu",
+  "username": "alextran",
+  "password": "$2a$12$bhXoSAa6lXEaVzbx5g4foubLuDZ1Lfa6UY2z717h9EkgBw8QMFVOq",
+  "birthday": {
+    "$date": "1990-05-03T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:17:33.413Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:17:33.413Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc13b5b01997334a8b903"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [],
+  "firstname": "Dung",
+  "lastname": "Vuong",
+  "email": "dungvuong@sjsu.edu",
+  "username": "dungvuong",
+  "password": "$2a$12$10dr5P6zF0aOPILaHbOXBe8k1ksfhk0tca76rATHDf.xXOeb.fa6G",
+  "birthday": {
+    "$date": "1989-04-10T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:18:03.917Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:18:03.917Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc1605b01997334a8b907"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [
+    {
+      "$oid": "60ffc58a0fabc165704bdb95"
+    },
+    {
+      "$oid": "60ffc5c40fabc165704bdba5"
+    }
+  ],
+  "firstname": "Tan",
+  "lastname": "Pham",
+  "email": "tanpham@sjsu.edu",
+  "username": "tanpham",
+  "password": "$2a$12$4Q7z0Gw5PFc4l7D0MKGM9u5fUMtYttxS6D70sOkCYKAXAWBYLrZj.",
+  "birthday": {
+    "$date": "1987-05-13T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:18:40.468Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:37:24.808Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc17f5b01997334a8b90b"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [],
+  "firstname": "Peter",
+  "lastname": "Nguyen",
+  "email": "peternguyen@sjsu.edu",
+  "username": "peternguyen",
+  "password": "$2a$12$zjm.GXzxISR/kDuLRwd0Ze.LQLVng/56tZ/GhdcNhh/60R2JYF0QO",
+  "birthday": {
+    "$date": "1993-02-24T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:19:11.825Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:19:11.825Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc19b5b01997334a8b90f"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [
+    {
+      "$oid": "60ffc5e80fabc165704bdbb9"
+    },
+    {
+      "$oid": "60ffc6070fabc165704bdbc8"
+    },
+    {
+      "$oid": "60ffc6460fabc165704bdbeb"
+    }
+  ],
+  "firstname": "Huy",
+  "lastname": "Nguyen",
+  "email": "huynguyen@sjsu.edu",
+  "username": "huynguyen",
+  "password": "$2a$12$0gii/Nrhonlk0rgX2ilvluoVipN0Vk.5YTVW0ROKYNJXgOvJS2kfq",
+  "birthday": {
+    "$date": "1995-05-10T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:19:39.599Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:39:34.020Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc1bc5b01997334a8b913"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [],
+  "firstname": "Nam",
+  "lastname": "Nguyen",
+  "email": "namnguyen@sjsu.edu",
+  "username": "namnguyen",
+  "password": "$2a$12$Yh.k/6vKuQjMQBjk9ANpS.nm2CICw.9UZG3pJ6huQvzRZGu5BL5UC",
+  "birthday": {
+    "$date": "1997-08-13T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:20:12.612Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:20:12.612Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc1d45b01997334a8b917"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [
+    {
+      "$oid": "60ffc4b60fabc165704bdb33"
+    },
+    {
+      "$oid": "60ffc4e60fabc165704bdb42"
+    },
+    {
+      "$oid": "60ffc5120fabc165704bdb57"
+    },
+    {
+      "$oid": "60ffc53b0fabc165704bdb70"
+    },
+    {
+      "$oid": "60ffc5620fabc165704bdb86"
+    }
+  ],
+  "firstname": "Tung",
+  "lastname": "Nguyen",
+  "email": "tungnguyen@sjsu.edu",
+  "username": "tungnguyen",
+  "password": "$2a$12$z56BH8aJquIRZ5NLHo4ww..1azPLH.gWe9CftW2cE6hOp8G2EcHkq",
+  "birthday": {
+    "$date": "1999-08-25T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:20:36.173Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:35:46.480Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc1ec5b01997334a8b91b"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [],
+  "firstname": "Cuc",
+  "lastname": "Tran",
+  "email": "cuctran@sjsu.edu",
+  "username": "cuctran",
+  "password": "$2a$12$vQj3.HBRD.geGgr68bJ.JujPzUwqxFyuV/Ez5C6c3SnxQL64sJNLy",
+  "birthday": {
+    "$date": "1989-04-20T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:21:00.172Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:21:00.172Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc2085b01997334a8b91f"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [],
+  "firstname": "Khoa",
+  "lastname": "Do",
+  "email": "khoado@sjsu.edu",
+  "username": "khoado",
+  "password": "$2a$12$hbgnszhOIpvUHW6JIFjZ6.ZMdYbxkWM8./V6XPxgK1BpWOJ5pUjx2",
+  "birthday": {
+    "$date": "1983-05-18T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:21:28.453Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:21:28.453Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc2215b01997334a8b923"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [],
+  "firstname": "Le",
+  "lastname": "Huynh",
+  "email": "lehuynh@sjsu.edu",
+  "username": "lehuynh",
+  "password": "$2a$12$tQoys5RWPxEtdihl.4pSzeNkwHsBDG8l2Qv1khwMqhv2LF4OC3m4i",
+  "birthday": {
+    "$date": "2020-05-13T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:21:53.206Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:21:53.206Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc23e5b01997334a8b927"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [],
+  "firstname": "Linh",
+  "lastname": "Thai",
+  "email": "linhthai@sjsu.edu",
+  "username": "linhthai",
+  "password": "$2a$12$c3RS7gGJMnC6uNuj/KO6wu47PO861bZPVOJJJWArFVmFKl/0CA1Ka",
+  "birthday": {
+    "$date": "1993-01-05T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:22:22.984Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:22:22.984Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc2545b01997334a8b92b"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [],
+  "firstname": "Ngoc",
+  "lastname": "Nguyen",
+  "email": "ngocnguyen@sjsu.edu",
+  "username": "ngocnguyen",
+  "password": "$2a$12$WjPGGrSv1ZPZt07zUn1Ro.MHy3k5xPv.khrf7V7y8vfTYCp08QTpK",
+  "birthday": {
+    "$date": "2019-05-15T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:22:44.502Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:22:44.502Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc2675b01997334a8b92f"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [],
+  "firstname": "Hai",
+  "lastname": "Dao",
+  "email": "haidao@sjsu.edu",
+  "username": "haidao",
+  "password": "$2a$12$yXSoOo7jBfquqfmyYp3uo.yenWm.VnVm2spx.utlSgsqjTVUaEO6a",
+  "birthday": {
+    "$date": "2021-07-09T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:23:03.876Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:23:03.876Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc2825b01997334a8b933"
+  },
+  "role": "user",
+  "camps": [],
+  "reservations": [],
+  "firstname": "Thanh",
+  "lastname": "Au",
+  "email": "thanhau@sjsu.edu",
+  "username": "thanhau",
+  "password": "$2a$12$6WL3QM5zAPydRAF7pn21DOkiRmvPS85RYKlKkzhPZwYK2BpJaao0i",
+  "birthday": {
+    "$date": "1994-06-15T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T08:23:30.577Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:23:30.577Z"
+  },
+  "__v": 0
+}]

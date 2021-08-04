@@ -1,0 +1,514 @@
+[{
+  "_id": {
+    "$oid": "60ffbea55b01997334a8b899"
+  },
+  "fk_user": {
+    "$oid": "60ffbcc2b4cb7157542b14b0"
+  },
+  "fk_camp": {
+    "$oid": "60ffb20baa778d6e2031d08c"
+  },
+  "startDate": {
+    "$date": "2021-07-28T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-07-31T00:00:00Z"
+  },
+  "unitType": "Mh Class A",
+  "numOfAdults": 3,
+  "numOfChildren": 2,
+  "totalPrice": 500,
+  "createdAt": {
+    "$date": "2021-07-27T08:07:01.939Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:07:01.939Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc2c75b01997334a8b94e"
+  },
+  "fk_user": {
+    "$oid": "60ffbcc2b4cb7157542b14b0"
+  },
+  "fk_camp": {
+    "$oid": "60ffb6ffcde01a1c54fe2c68"
+  },
+  "startDate": {
+    "$date": "2021-07-28T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-08-23T00:00:00Z"
+  },
+  "unitType": "Mh Class C",
+  "numOfAdults": 3,
+  "numOfChildren": 3,
+  "totalPrice": 1510,
+  "createdAt": {
+    "$date": "2021-07-27T08:24:39.357Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:24:39.357Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc2f05b01997334a8b95e"
+  },
+  "fk_user": {
+    "$oid": "60ffbcc2b4cb7157542b14b0"
+  },
+  "fk_camp": {
+    "$oid": "60ffb719cde01a1c54fe2c6f"
+  },
+  "startDate": {
+    "$date": "2021-07-29T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-08-11T00:00:00Z"
+  },
+  "unitType": "Mh Class C",
+  "numOfAdults": 3,
+  "numOfChildren": 3,
+  "totalPrice": 795,
+  "createdAt": {
+    "$date": "2021-07-27T08:25:20.937Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:25:20.937Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc3165b01997334a8b970"
+  },
+  "fk_user": {
+    "$oid": "60ffbcc2b4cb7157542b14b0"
+  },
+  "fk_camp": {
+    "$oid": "60ffb8f3155397529c33fd49"
+  },
+  "startDate": {
+    "$date": "2021-07-29T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-08-17T00:00:00Z"
+  },
+  "unitType": "Mh Class B",
+  "numOfAdults": 2,
+  "numOfChildren": 4,
+  "totalPrice": 1152,
+  "createdAt": {
+    "$date": "2021-07-27T08:25:58.340Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:25:58.340Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc3315b01997334a8b989"
+  },
+  "fk_user": {
+    "$oid": "60ffbcc2b4cb7157542b14b0"
+  },
+  "fk_camp": {
+    "$oid": "60ffb6ffcde01a1c54fe2c68"
+  },
+  "startDate": {
+    "$date": "2021-07-29T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-08-17T00:00:00Z"
+  },
+  "unitType": "Mh Class B",
+  "numOfAdults": 2,
+  "numOfChildren": 3,
+  "totalPrice": 1140,
+  "createdAt": {
+    "$date": "2021-07-27T08:26:25.214Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:26:25.214Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc3635b01997334a8b9a3"
+  },
+  "fk_user": {
+    "$oid": "60ffbcc2b4cb7157542b14b0"
+  },
+  "fk_camp": {
+    "$oid": "60ffb8f3155397529c33fd49"
+  },
+  "startDate": {
+    "$date": "2021-07-29T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-08-17T00:00:00Z"
+  },
+  "unitType": "Truck Camper",
+  "numOfAdults": 1,
+  "numOfChildren": 2,
+  "totalPrice": 972,
+  "createdAt": {
+    "$date": "2021-07-27T08:27:15.029Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:27:15.029Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc3a012d4495d486078d0"
+  },
+  "fk_user": {
+    "$oid": "60ffbcc2b4cb7157542b14b0"
+  },
+  "fk_camp": {
+    "$oid": "60ffb8f3155397529c33fd49"
+  },
+  "startDate": {
+    "$date": "2021-08-26T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-08-28T00:00:00Z"
+  },
+  "unitType": "Mh Class A",
+  "numOfAdults": 3,
+  "numOfChildren": 1,
+  "totalPrice": 466,
+  "createdAt": {
+    "$date": "2021-07-27T08:28:16.716Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:28:16.716Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc3c512d4495d486078e9"
+  },
+  "fk_user": {
+    "$oid": "60ffbcc2b4cb7157542b14b0"
+  },
+  "fk_camp": {
+    "$oid": "60ffb20baa778d6e2031d08c"
+  },
+  "startDate": {
+    "$date": "2021-09-01T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-09-03T00:00:00Z"
+  },
+  "unitType": "Mh Class A",
+  "numOfAdults": 2,
+  "numOfChildren": 2,
+  "totalPrice": 380,
+  "createdAt": {
+    "$date": "2021-07-27T08:28:53.461Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:28:53.461Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc3e912d4495d486078ff"
+  },
+  "fk_user": {
+    "$oid": "60ffbcc2b4cb7157542b14b0"
+  },
+  "fk_camp": {
+    "$oid": "60ffb20baa778d6e2031d08c"
+  },
+  "startDate": {
+    "$date": "2021-07-28T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-07-30T00:00:00Z"
+  },
+  "unitType": "Mh Class A",
+  "numOfAdults": 2,
+  "numOfChildren": 1,
+  "totalPrice": 330,
+  "createdAt": {
+    "$date": "2021-07-27T08:29:29.069Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:29:29.069Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc4b60fabc165704bdb33"
+  },
+  "fk_user": {
+    "$oid": "60ffc1d45b01997334a8b917"
+  },
+  "fk_camp": {
+    "$oid": "60ffb92b155397529c33fd50"
+  },
+  "startDate": {
+    "$date": "2021-08-03T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-08-05T00:00:00Z"
+  },
+  "unitType": "Mh Class A",
+  "numOfAdults": 2,
+  "numOfChildren": 1,
+  "totalPrice": 370,
+  "createdAt": {
+    "$date": "2021-07-27T08:32:54.833Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:32:54.833Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc4e60fabc165704bdb42"
+  },
+  "fk_user": {
+    "$oid": "60ffc1d45b01997334a8b917"
+  },
+  "fk_camp": {
+    "$oid": "60ffb6b1cde01a1c54fe2c5d"
+  },
+  "startDate": {
+    "$date": "2021-07-28T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-07-30T00:00:00Z"
+  },
+  "unitType": "Truck Camper",
+  "numOfAdults": 1,
+  "numOfChildren": 1,
+  "totalPrice": 270,
+  "createdAt": {
+    "$date": "2021-07-27T08:33:42.144Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:33:42.144Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc5120fabc165704bdb57"
+  },
+  "fk_user": {
+    "$oid": "60ffc1d45b01997334a8b917"
+  },
+  "fk_camp": {
+    "$oid": "60ffb20baa778d6e2031d08c"
+  },
+  "startDate": {
+    "$date": "2021-07-28T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-07-30T00:00:00Z"
+  },
+  "unitType": "Truck Camper",
+  "numOfAdults": 1,
+  "numOfChildren": 1,
+  "totalPrice": 240,
+  "createdAt": {
+    "$date": "2021-07-27T08:34:26.332Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:34:26.332Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc53b0fabc165704bdb70"
+  },
+  "fk_user": {
+    "$oid": "60ffc1d45b01997334a8b917"
+  },
+  "fk_camp": {
+    "$oid": "60ffb20baa778d6e2031d08c"
+  },
+  "startDate": {
+    "$date": "2021-07-28T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-07-30T00:00:00Z"
+  },
+  "unitType": "Truck Camper",
+  "numOfAdults": 1,
+  "numOfChildren": 1,
+  "totalPrice": 240,
+  "createdAt": {
+    "$date": "2021-07-27T08:35:07.933Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:35:07.933Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc5620fabc165704bdb86"
+  },
+  "fk_user": {
+    "$oid": "60ffc1d45b01997334a8b917"
+  },
+  "fk_camp": {
+    "$oid": "60ffb6b1cde01a1c54fe2c5d"
+  },
+  "startDate": {
+    "$date": "2021-07-28T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-07-30T00:00:00Z"
+  },
+  "unitType": "Truck Camper",
+  "numOfAdults": 1,
+  "numOfChildren": 1,
+  "totalPrice": 270,
+  "createdAt": {
+    "$date": "2021-07-27T08:35:46.479Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:35:46.479Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc58a0fabc165704bdb95"
+  },
+  "fk_user": {
+    "$oid": "60ffc1605b01997334a8b907"
+  },
+  "fk_camp": {
+    "$oid": "60ffb719cde01a1c54fe2c6f"
+  },
+  "startDate": {
+    "$date": "2021-07-28T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-07-30T00:00:00Z"
+  },
+  "unitType": "Truck Camper",
+  "numOfAdults": 1,
+  "numOfChildren": 1,
+  "totalPrice": 250,
+  "createdAt": {
+    "$date": "2021-07-27T08:36:26.106Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:36:26.106Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc5c40fabc165704bdba5"
+  },
+  "fk_user": {
+    "$oid": "60ffc1605b01997334a8b907"
+  },
+  "fk_camp": {
+    "$oid": "60ffb6ffcde01a1c54fe2c68"
+  },
+  "startDate": {
+    "$date": "2021-07-28T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-07-31T00:00:00Z"
+  },
+  "unitType": "Mh Class B",
+  "numOfAdults": 2,
+  "numOfChildren": 2,
+  "totalPrice": 450,
+  "createdAt": {
+    "$date": "2021-07-27T08:37:24.807Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:37:24.807Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc5e80fabc165704bdbb9"
+  },
+  "fk_user": {
+    "$oid": "60ffc19b5b01997334a8b90f"
+  },
+  "fk_camp": {
+    "$oid": "60ffb20baa778d6e2031d08c"
+  },
+  "startDate": {
+    "$date": "2021-07-29T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-08-15T00:00:00Z"
+  },
+  "unitType": "Mh Class C",
+  "numOfAdults": 1,
+  "numOfChildren": 2,
+  "totalPrice": 560,
+  "createdAt": {
+    "$date": "2021-07-27T08:38:00.046Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:38:00.046Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc6070fabc165704bdbc8"
+  },
+  "fk_user": {
+    "$oid": "60ffc19b5b01997334a8b90f"
+  },
+  "fk_camp": {
+    "$oid": "60ffb6ffcde01a1c54fe2c68"
+  },
+  "startDate": {
+    "$date": "2021-07-28T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-08-16T00:00:00Z"
+  },
+  "unitType": "Mh Class B",
+  "numOfAdults": 1,
+  "numOfChildren": 2,
+  "totalPrice": 990,
+  "createdAt": {
+    "$date": "2021-07-27T08:38:31.606Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:38:31.606Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffc6460fabc165704bdbeb"
+  },
+  "fk_user": {
+    "$oid": "60ffc19b5b01997334a8b90f"
+  },
+  "fk_camp": {
+    "$oid": "60ffb8f3155397529c33fd49"
+  },
+  "startDate": {
+    "$date": "2021-07-29T00:00:00Z"
+  },
+  "endDate": {
+    "$date": "2021-08-16T00:00:00Z"
+  },
+  "unitType": "Mh Class B",
+  "numOfAdults": 2,
+  "numOfChildren": 2,
+  "totalPrice": 1014,
+  "createdAt": {
+    "$date": "2021-07-27T08:39:34.016Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T08:39:34.016Z"
+  },
+  "__v": 0
+}]

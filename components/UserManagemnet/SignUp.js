@@ -40,7 +40,7 @@ const UserSignUp = (props) => {
       </p>
       <Form.Item
         name="firstname"
-        label="firstname"
+        label="First Name"
         rules={[
           {
             required: true,
@@ -52,7 +52,7 @@ const UserSignUp = (props) => {
       </Form.Item>
       <Form.Item
         name="lastname"
-        label="lastname"
+        label="Last Name"
         rules={[
           {
             required: true,
@@ -64,7 +64,7 @@ const UserSignUp = (props) => {
       </Form.Item>
       <Form.Item
         name="email"
-        label="email"
+        label="Email"
         rules={[
           {
             required: true,
@@ -80,7 +80,7 @@ const UserSignUp = (props) => {
       </Form.Item>
       <Form.Item
         name="username"
-        label="username"
+        label="Username"
         rules={[
           {
             required: true,
@@ -97,7 +97,7 @@ const UserSignUp = (props) => {
 
       <Form.Item
         name="password"
-        label="password"
+        label="Password"
         rules={[
           {
             required: true,
@@ -117,7 +117,7 @@ const UserSignUp = (props) => {
       </Form.Item>
       <Form.Item
         name="confirm"
-        label="confirm"
+        label="Confirm Password"
         dependencies={["password"]}
         rules={[
           {
@@ -142,7 +142,7 @@ const UserSignUp = (props) => {
 
       <Form.Item
         name="dob"
-        label="dob"
+        label="Date of Birth"
         rules={[
           {
             required: true,
