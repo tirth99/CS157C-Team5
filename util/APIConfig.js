@@ -14,6 +14,8 @@ const RESERVE_CAMP_URL = Base + "api/actions/reserveCamp";
 const GET_BOOKED_CAMPS_URL = Base + "api/actions/getAllBookedCamps";
 const SEND_EMAIL_URL = Base + "api/actions/sendEmail"
 const CHANGE_PASSWORD_URL = Base + "api/actions/changePassword"
+const FETCH_ALL_USERS_URL = Base + "api/actions/fetchAllUsers"
+const DELETE_USER_BY_ID_URL = Base + "api/actions/deleteUserById/"
 export default {
   Base,
   LOGIN_URL,
@@ -30,5 +32,7 @@ export default {
   GET_BOOKED_CAMPS_URL,
   FETCH_CAMPSITES_BY_QUERY,
   SEND_EMAIL_URL,
-  CHANGE_PASSWORD_URL
+  CHANGE_PASSWORD_URL,
+  FETCH_ALL_USERS_URL,
+  DELETE_USER_BY_ID_URL
 };

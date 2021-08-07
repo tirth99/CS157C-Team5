@@ -45,7 +45,7 @@ const Profile = (props) => {
   return (
     <>
       <div className="profile__center">
-        <h2 className="role">Role : {toUpperCase(user.role)}</h2>
+        <h2 className="role">Profile : {toUpperCase(user.role)}</h2>
         <Form
           style={{ width: "100vw" }}
           form={form}
@@ -55,7 +55,7 @@ const Profile = (props) => {
         >
           <Form.Item
             name="firstname"
-            label="firstname"
+            label="First Name"
             rules={[
               {
                 required: true,
@@ -67,7 +67,7 @@ const Profile = (props) => {
           </Form.Item>
           <Form.Item
             name="lastname"
-            label="lastname"
+            label="Last Name"
             rules={[
               {
                 required: true,
@@ -79,7 +79,7 @@ const Profile = (props) => {
           </Form.Item>
           <Form.Item
             name="email"
-            label="email"
+            label="Email"
             rules={[
               {
                 required: true,
@@ -93,7 +93,7 @@ const Profile = (props) => {
           >
             <Input></Input>
           </Form.Item>
-          <Form.Item name="birthday" label="birthday">
+          <Form.Item name="birthday" label="Date of Birth">
             <DatePicker format={dateFormat}></DatePicker>
           </Form.Item>
 
